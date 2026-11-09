@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Timeshare Exit Relief — Free Session, Newark DE</title>
+<title>Free 90-Minute Private Travel-Club Preview — Couples Only</title>
 <style>
-  :root{--bg:#0b1220;--card:#121b2e;--accent:#2dd4bf;--accent2:#f59e0b;--txt:#e5e7eb;--muted:#94a3b8;--green:#22c55e}
+  :root{--bg:#0b1220;--card:#121b2e;--accent:#2dd4bf;--accent2:#f59e0b;--txt:#e5e7eb;--muted:#94a3b8;--green:#22c55e;--red:#ef4444}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(160deg,var(--bg),#0f1729);color:var(--txt);line-height:1.5;padding:18px}
-  .wrap{max-width:680px;margin:0 auto}
+  .wrap{max-width:700px;margin:0 auto}
   header{text-align:center;margin-bottom:16px}
   h1{font-size:1.7rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
   .tag{color:var(--muted);margin-top:6px;font-size:.9rem}
-  .hero{background:var(--card);border:1px solid var(--green);border-radius:16px;padding:22px;margin:18px 0}
+  .hero{background:var(--card);border:1px solid var(--accent);border-radius:16px;padding:22px;margin:18px 0}
   .hero h2{font-size:1.25rem;margin-bottom:6px}
   .hero p{color:var(--muted);font-size:.9rem;margin-bottom:14px}
   form{display:flex;flex-direction:column;gap:10px;text-align:left}
@@ -21,9 +21,12 @@
   .cta{width:100%;padding:15px;border-radius:12px;border:none;cursor:pointer;font-weight:800;font-size:1.05rem;background:var(--green);color:#04200f;margin-top:4px}
   .card{background:var(--card);border:1px solid #30363d;border-radius:12px;padding:16px;margin:14px 0}
   .card h3{font-size:1.05rem;margin-bottom:6px;color:var(--accent2)}
-  .card p{color:var(--muted);font-size:.85rem}
+  .card p,.card li{color:var(--muted);font-size:.85rem}
+  ol,ul{margin-left:18px}
   .pill{display:inline-block;background:#0b3b2e;color:var(--green);border-radius:999px;padding:3px 10px;font-size:.75rem;margin:2px}
+  .qual{border-left:3px solid var(--accent2);padding-left:10px;margin:6px 0}
   .status{margin-top:10px;font-size:.85rem;color:var(--accent);min-height:18px;text-align:center}
+  .req{color:var(--accent2);font-weight:700}
   footer{color:var(--muted);text-align:center;margin-top:22px;font-size:.72rem}
   footer a{color:var(--accent)}
 </style>
@@ -31,34 +34,95 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>Stuck in a Timeshare? Talk to Newark.</h1>
-    <div class="tag">Consumer Contract Solutions · Free, no-obligation exit-relief session — Newark, DE</div>
+    <h1>See How Members Travel Differently — Free 90-Min Preview</h1>
+    <div class="tag">A private travel membership · Complimentary 90-minute preview for qualified couples — no purchase required</div>
   </header>
+
   <section class="hero">
-    <h2>🟢 Request your free session</h2>
-    <p>Leave your details and Newark team calls you back. You asked — no spam, no timeshare pitch. Bring your contract; we map out how to cancel the fees and any loan.</p>
+    <h2>🟢 Reserve your free couple's preview</h2>
+    <p>This preview is for couples only. Both of you attend the full 90 minutes together. You'll see how the membership works and what you can book — and you each leave with a gift, whether you join or not.</p>
     <form id="leadForm" action="https://formsubmit.co/dafnesqualifiedsolutions@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New Timeshare Exit Lead — Newark DE">
+      <input type="hidden" name="_subject" value="New Travel-Club Preview Lead">
       <input type="hidden" name="_next" value="https://dafnesqualifiedsolutions-ops.github.io/timeshare-exit-de/">
       <input type="hidden" name="_gotcha" style="display:none">
-      <label>Name <input name="name" required placeholder="John &amp; Mary"></label>
+      <label>Names (both partners) <input name="names" required placeholder="John & Mary Smith"></label>
       <label>Phone <input name="phone" required placeholder="+1 302 555 0100"></label>
       <label>Email <input name="email" type="email" required placeholder="you@email.com"></label>
+      <div class="qual">
+        <label class="req">Relationship status
+          <select name="relationship" required>
+            <option value="" disabled selected>Select…</option>
+            <option>Married</option>
+            <option>Living together</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="req">Combined yearly income
+          <select name="income" required>
+            <option value="" disabled selected>Select…</option>
+            <option>$55,000 or more</option>
+            <option>$40,000 – $55,000</option>
+            <option>Under $40,000</option>
+          </select>
+        </label>
+        <label class="req">Will you both attend the full 90 minutes together?
+          <select name="couple" required>
+            <option value="" disabled selected>Select…</option>
+            <option>Yes — both of us, full 90 min</option>
+            <option>No — only one / can't stay</option>
+          </select>
+        </label>
+        <label class="req">Will you stay engaged (no phones / other tasks during the preview)?
+          <select name="engage" required>
+            <option value="" disabled selected>Select…</option>
+            <option>Yes — fully present</option>
+            <option>No — may be distracted</option>
+          </select>
+        </label>
+      </div>
       <label>Best day <select name="day"><option>Day 1</option><option>Day 2</option><option>Day 3</option></select></label>
       <label>Best time <select name="time"><option>12 PM</option><option>3 PM</option><option>6 PM</option></select></label>
-      <button class="cta" type="submit">📞 Request a call from Newark team</button>
+      <button class="cta" type="submit">📞 Reserve our free 90-min preview</button>
     </form>
     <p class="status" id="status"></p>
-    <p style="font-size:.78rem;color:var(--muted);margin-top:10px"><a href="https://wa.me/529987513548" style="color:var(--accent)">💬 WhatsApp +52 998 751 3548</a> &nbsp;·&nbsp; <a href="mailto:dafnesqualifiedsolutions@gmail.com?subject=Timeshare%20Exit%20Session%20Request&body=Name%3A%0APhone%3A%0ABest%20day%2Ftime%3A" style="color:var(--accent)">Email us</a></p>
+    <p style="font-size:.78rem;color:var(--muted);margin-top:10px"><a href="https://wa.me/529984083668" style="color:var(--accent)">💬 WhatsApp +52 998 408 3668</a> · <a href="mailto:dafnesqualifiedsolutions@gmail.com?subject=Travel%20Club%20Preview%20Request&body=Names%3A%0APhone%3A%0ACombined%20income%3A%0ARelationship%3A%0ABoth%20attend%2090%20min%3A%0ABest%20day%2Ftime%3A" style="color:var(--accent)">Email us</a></p>
   </section>
-  <div class="card"><h3>What you get for showing up</h3><p><span class="pill">$100 cash</span> <span class="pill">dinner for two</span><br>A 45-minute private briefing in Newark, DE. Nothing to buy — we help you EXIT.</p></div>
-  <div class="card"><h3>Who it's for</h3><p>Timeshare owners with rising maintenance fees (or a loan still being paid), contract holder able to attend with paperwork, major credit card on file. Vidanta, El Dorado Royal/Casitas, deeded US/Canada welcome.</p></div>
-  <div class="card"><h3>Session times</h3><p>Three days, three waves daily: <b>12 PM · 3 PM · 6 PM</b>. Limited to 5 couples per wave — seats fill fast.</p></div>
-  <footer>Consumer Contract Solutions · This is an informational session, not a timeshare offer.<br>By requesting a call you consent to be contacted about this session. Opt out any time by reply.</footer>
+
+  <div class="card"><h3>How the preview runs</h3>
+    <ol>
+      <li><b>Group podium pitch</b> — we present the club and how the membership works.</li>
+      <li><b>Private room with your rep</b> — just you two, one-on-one with a representative.</li>
+      <li><b>Talk travel</b> — we go through your travel plans and see if it fits you.</li>
+      <li><b>Join or don't</b> — no pressure either way. You both get a <b>gift for attending</b>.</li>
+    </ol>
+  </div>
+
+  <div class="card"><h3>What the membership is</h3>
+    <p>A private travel membership — like having your own travel agency. Book the same way you would through Expedia or Booking.com:</p>
+    <p><span class="pill">cruises</span> <span class="pill">flights</span> <span class="pill">hotels</span> <span class="pill">car hire</span> <span class="pill">golf</span> <span class="pill">resorts</span></p>
+    <p style="margin-top:8px">Plus a large inventory of timeshare-resort stays at beautiful properties — normally available for roughly a maintenance-fee price, <b>with no $50,000 buy-in.</b></p>
+  </div>
+
+  <div class="card"><h3>Who it's for</h3>
+    <p>Married or cohabiting couples with combined income of <b>$55,000+</b> who can attend the full 90 minutes <b>together</b> and stay engaged. Bring your partner — this is a two-person preview.</p>
+  </div>
+
+  <footer>Dafne's Qualified Solutions · This is a complimentary preview presentation; no purchase is required to attend or receive your gift.<br>By requesting a preview you consent to be contacted about this session. Opt out any time by reply.</footer>
 </div>
 <script>
   const form=document.getElementById('leadForm');const status=document.getElementById('status');
-  form.addEventListener('submit',function(e){if(form.action.includes('REPLACE_WITH_FORM_ID')){e.preventDefault();const d=new FormData(form);const subj=encodeURIComponent('Timeshare Exit Session Request');const body=encodeURIComponent('Name: '+d.get('name')+'\nPhone: '+d.get('phone')+'\nEmail: '+d.get('email')+'\nDay: '+d.get('day')+'\nTime: '+d.get('time'));window.location.href='mailto:dafnesqualifiedsolutions@gmail.com?subject='+subj+'&body='+body;status.textContent='Opening your email app to send the request…';}else{status.textContent='Sending…';}});
+  form.addEventListener('submit',function(e){
+    const rel=form.relationship.value, inc=form.income.value, cou=form.couple.value, eng=form.engage.value;
+    const ok=(rel==='Married'||rel==='Living together') && inc==='$55,000 or more' && cou.indexOf('Yes')===0 && eng.indexOf('Yes')===0;
+    if(!ok){
+      e.preventDefault();
+      status.style.color='var(--red)';
+      status.textContent='This complimentary preview is for married or cohabiting couples with combined income of $55k+ who attend the full 90 minutes together and stay engaged. If that’s not you yet, message us on WhatsApp and we’ll point you to the right option.';
+      return;
+    }
+    status.style.color='var(--accent)';
+    status.textContent='Sending…';
+  });
 </script>
 </body>
 </html>
